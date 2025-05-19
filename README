@@ -1,0 +1,49 @@
+````markdown name=README.md
+# Car Park Space Detection
+
+This project uses OpenCV and computer vision techniques to detect free and occupied parking spaces in a parking lot video feed.
+
+## Features
+
+- Detects available and occupied parking spaces from a video.
+- Visualizes the count of available spaces in real-time.
+- Uses a pre-defined list of parking space positions (`CarParkPos.pkl`).
+- Draws rectangles and overlays text on the video to indicate parking status.
+
+## Requirements
+
+- Python 3.x
+- OpenCV (`cv2`)
+- cvzone
+- numpy
+- pickle
+
+Install dependencies with:
+```bash
+pip install opencv-python cvzone numpy
+```
+
+## Files
+
+- `carPark.mp4` — Sample parking lot video.
+- `CarParkPos.pkl` — Pickle file storing parking position coordinates.
+- `car_park_detection.py` — Main script for parking space detection.
+
+## Usage
+
+1. Ensure `carPark.mp4` and `CarParkPos.pkl` are in the project directory.
+2. Run the main script:
+    ```bash
+    python car_park_detection.py
+    ```
+3. The video will display with boxes around each parking space. The number of free spaces will be shown at the top.
+
+## Customization
+
+- To use your own parking lot video, replace `carPark.mp4` with your video file.
+- To change parking space positions, edit or generate a new `CarParkPos.pkl` file.
+
+## License
+
+This project is for educational purposes.
+````
